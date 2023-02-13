@@ -42,7 +42,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = ({
       </div>
       <div
         className={`w-[60%] absolute bottom-0 ${
-          id == 1 ? "-right-16" : "right-0"
+          id === 1 ? "-right-16" : "right-0"
         }`}
       >
         <img
