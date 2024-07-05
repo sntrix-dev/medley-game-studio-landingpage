@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { IconTextFiled } from "../../packages/design";
 import { SearchIcon } from "../../packages/design/icons";
 import { Logo } from "../logo";
