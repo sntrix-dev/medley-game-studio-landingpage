@@ -1,18 +1,18 @@
 import { FC } from "react";
-import { Container, Section } from "..";
+import { Container } from "..";
 import { Title } from "../../../packages/design";
 import { TestimonialCard } from "../../Cards";
 
 export const TestimonialSection: FC = () => (
-  <Section>
+  <section className="w-full lg:h-screen lg:max-h-[600px] my-10 px-4">
     <Container className="flex flex-col items-center justify-center ">
       <div className="flex flex-col items-center justify-center space-y-4">
         <Title color="#F68E5F">TESTIMONIALS</Title>
-        <h1 className="text-4xl font-bold text-white text-center">
+        <h1 className="text-2xl lg:text-4xl font-bold text-white text-center">
           What our Customers <br /> are saying
         </h1>
       </div>
-      <div className="w-full lg:w-[80%] mx-auto grid grid-cols-2 gap-4 mt-20">
+      <div className="w-full lg:w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 mt-20">
         <TestimonialCard
           id={1}
           author="Charles Boyle"
@@ -33,5 +33,5 @@ export const TestimonialSection: FC = () => (
         />
       </div>
     </Container>
-  </Section>
+  </section>
 );

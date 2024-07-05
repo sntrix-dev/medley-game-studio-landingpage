@@ -4,18 +4,18 @@ import { Title } from "../../../packages/design";
 import { ServiceCard } from "../../Cards";
 
 export const ServiceSection: FC = () => (
-  <section className="w-creen h-screen relative">
+  <section className="w-full lg:h-screen lg:max-h-[800px] relative my-10">
     <RadialBlur className="-left-[10%]" />
     <RadialBlur className="-right-[10%]" />
-    <div className="max-w-[1280px] w-full h-full mx-auto flex flex-col items-center justify-center space-y-20">
+    <div className="max-w-[1280px] w-full h-full mx-auto flex flex-col items-center justify-center gap-y-20 px-4">
       <div className="flex flex-col items-center space-y-4">
         <Title color="#F68E5F">What we do</Title>
-        <h1 className="text-4xl font-bold text-white text-center">
+        <h1 className="text-2xl lg:text-4xl font-bold text-white text-center">
           Meeting the needs of players <br /> across the world
         </h1>
       </div>
 
-      <div className="w-full grid grid-cols-3 gap-10">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-10">
         <ServiceCard
           color="#61FFD9"
           description="List of carefully selected, verified, high quality suppliers in different regions worldwide."
