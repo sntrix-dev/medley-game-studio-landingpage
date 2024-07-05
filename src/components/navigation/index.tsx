@@ -10,8 +10,6 @@ export const Navbar: FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
   const [scrolledUp, setScrolledUp] = useState<boolean>(false);
 
-  const headerRef = useRef<HTMLElement>(null);
-
   useEffect(() => {
     if (window) {
       window.addEventListener("scroll", (e) => {
@@ -26,7 +24,6 @@ export const Navbar: FC = () => {
   return (
     <>
       <header
-        ref={headerRef}
         className={`w-full fixed top-0 left-0 z-10 transition-all duration-300 ease-in-out ${
           isSidebarOpen || scrolledUp ? "bg-base" : "bg-transparent"
         }`}

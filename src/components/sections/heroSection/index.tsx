@@ -37,7 +37,10 @@ export const HeroSection: FC = () => (
         </Button>
       </div>
 
-      <button className="flex items-center space-x-4 text-white absolute top-[90%] left-[calc(50%-(7.145rem/2))]">
+      <button
+        className="flex items-center space-x-4 text-white absolute top-[90%] left-[calc(50%-(7.145rem/2))]"
+        onClick={() => window?.scrollTo({ top: 250 })}
+      >
         <span>Scroll down</span>
         <span>
           <ArrowDownIcon />
