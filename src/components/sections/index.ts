@@ -20,6 +20,7 @@ export {
 export const Section = styled.section`
 width: 100vw;
 height: 100vh;
+max-height: 600px
 `;
 
 export  const Container = styled.div`

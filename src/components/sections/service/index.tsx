@@ -4,7 +4,7 @@ import { Title } from "../../../packages/design";
 import { ServiceCard } from "../../Cards";
 
 export const ServiceSection: FC = () => (
-  <section className="w-creen h-screen relative">
+  <section className="w-creen h-screen max-h-[800px] relative">
     <RadialBlur className="-left-[10%]" />
     <RadialBlur className="-right-[10%]" />
     <div className="max-w-[1280px] w-full h-full mx-auto flex flex-col items-center justify-center space-y-20">
