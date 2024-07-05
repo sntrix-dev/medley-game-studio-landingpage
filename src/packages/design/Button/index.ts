@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ToggleButton from "./Toggle";
 
 export const Button = styled.button`
   background: linear-gradient(267.28deg, #7b61ff 24%, #aa82ff 73.95%);
@@ -8,3 +9,7 @@ export const Button = styled.button`
   color: white;
   width: auto;
 `;
+
+export {
+  ToggleButton
+}
