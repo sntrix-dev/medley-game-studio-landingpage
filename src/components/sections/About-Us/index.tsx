@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styled from "styled-components";
-import { Container, Section } from "..";
+import { Container } from "..";
 import { ConsoleIcon, PlayIcon } from "../../../packages/design/icons";
 
 interface ItemProps {
@@ -22,9 +22,9 @@ export const AboutSection: FC = () => {
   );
 
   return (
-    <Section>
+    <section className="w-full lg:h-screen lg:max-h-[600px] my-10">
       <Container className="w-full h-full flex items-center justify-center">
-        <div className="grid grid-cols-[calc(60%-2rem)_40%] gap-8 p-4">
+        <div className="grid grid-cols-1 lg:grid-cols-[calc(60%-2rem)_40%] gap-8 p-4">
           <div className="relative w-full overflow-hidden ">
             <img
               src="/images/banners/cod-1.jpg"
@@ -38,7 +38,7 @@ export const AboutSection: FC = () => {
             <Overlay className="w-full h-full absolute top-0 left-0" />
           </div>
           <div className="space-y-8">
-            <h1 className="text-4xl font-bold text-white text-left">
+            <h1 className="text-2xl lg:text-4xl font-bold text-white text-left">
               We are the Best Game
               <br /> Distributors for all Gamers.
             </h1>
@@ -63,7 +63,7 @@ export const AboutSection: FC = () => {
           </div>
         </div>
       </Container>
-    </Section>
+    </section>
   );
 };
 

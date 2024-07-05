@@ -10,7 +10,7 @@ interface SidebarProps {
 const Sidebar: FC<SidebarProps> = ({ show }) => {
   return (
     <div
-      className={`h-[calc(100vh-68px)] w-full fixed bottom-0 z-50 bg-base px-4 py-10 block lg:hidden transition-all duration-300 ease-in-out ${
+      className={`h-[calc(100vh-64px)] w-full fixed bottom-0 z-50 bg-base px-4 py-10 block lg:hidden transition-all duration-300 ease-in-out ${
         show ? "right-0" : "-right-[110%]"
       }`}
     >

@@ -9,20 +9,22 @@ import {
 import { Nav } from "./nav";
 
 export const Footer: FC = () => (
-  <footer className="w-screen">
+  <footer className="w-full">
     <div className="w-full max-w-[1280px] mx-auto p-4">
-      <div className="w-full grid grid-cols-2 gap-16 py-8">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 py-8">
         <div className="space-y-8">
           <h1 className="text-4xl font-bold text-white text-left">
             Get updates on your <br /> favourite games
           </h1>
           <div className="flex items-center space-x-10">
             <text className="text-white">Ready to explore?</text>
-            <Button>Get Started</Button>
+            <Button className="py-1.5 px-8 lg:px-10 lg:py-3">
+              Get Started
+            </Button>
           </div>
         </div>
 
-        <div className="w-full grid grid-cols-3 gap-8">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
           <section className="space-y-4">
             <Title>Services</Title>
             <NavContainer className="space-y-2">
@@ -51,7 +53,7 @@ export const Footer: FC = () => (
         </div>
       </div>
 
-      <div className="flex items-center justify-between py-4">
+      <div className="flex items-center justify-between flex-col md:flex-row gap-4 py-4">
         <div className="space-x-8">
           <Nav name="Terms & Conditions" />
           <Nav name="Privacy Policy" />
